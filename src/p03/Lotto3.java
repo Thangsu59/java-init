@@ -11,6 +11,7 @@ public class Lotto3 {
 		int[] lotto=new int[6];
 		for(int i=0;i<lotto.length;i++) {
 			lotto[i]=random.nextInt(6)+1;
+			System.out.println(lotto[i]);
 		}
 		
 		Scanner scan=new Scanner(System.in);
@@ -18,11 +19,13 @@ public class Lotto3 {
 		String lottoStr=scan.nextLine();	
 		String[] strs=lottoStr.split(",");
 		for(int i=0;i<strs.length;i++) {
+			int num=Integer.parseInt(strs[i]);
 			System.out.println(strs[i]);
 			
-			if (strs[i]=lotto[i]) {
+			if (lotto[i]==num ) {
 				count++;
-			}
+				break;
+			} 
 			
 		}
 		System.out.println(count+"개 맞췄습니다.");
