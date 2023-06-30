@@ -55,5 +55,8 @@ public class HumanExe {
 		
 		System.out.println("평균 이상인 사람은 "+names+" 입니다.");
 	}
+	
+	
+	
 
 }
