@@ -24,17 +24,26 @@ public class BaseballGame {
 			System.out.print(nums[i]);
 			if(i!=nums.length-1) {
 				System.out.print(", ");
+
 			}
 		}
+		System.out.println();
 		Scanner scan=new Scanner(System.in);
 		System.out.print("3개의 숫자를 입력하세요 : ");
 		String baseballnum=scan.nextLine();
 		String[] strs=baseballnum.split(",");
 		int[] compNums=new int[strs.length];
 		for(int i=0;i<strs.length;i++) {
-			compNums[i]=Integer.parseInt(strs[i]);
-			
+			compNums[i]=Integer.parseInt(strs[i]);	
 		}
+		for(int i=0;i<nums.length;i++) {
+			for(int j=1;j<compNums.length;j++) {
+				if(nums[i]==compNums[i]) {
+					System.out.print("볼");
+				}
+			}
+		}
+		
 		
 		
 
