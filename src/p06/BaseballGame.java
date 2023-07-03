@@ -1,6 +1,7 @@
 package p06;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class BaseballGame {
 
@@ -24,6 +25,15 @@ public class BaseballGame {
 			if(i!=nums.length-1) {
 				System.out.print(", ");
 			}
+		}
+		Scanner scan=new Scanner(System.in);
+		System.out.print("3개의 숫자를 입력하세요 : ");
+		String baseballnum=scan.nextLine();
+		String[] strs=baseballnum.split(",");
+		int[] compNums=new int[strs.length];
+		for(int i=0;i<strs.length;i++) {
+			compNums[i]=Integer.parseInt(strs[i]);
+			
 		}
 		
 		
