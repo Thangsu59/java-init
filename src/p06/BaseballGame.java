@@ -36,16 +36,22 @@ public class BaseballGame {
 		for(int i=0;i<strs.length;i++) {
 			compNums[i]=Integer.parseInt(strs[i]);	
 		}
+		int strike=0;
+		int ball=0;
 		for(int i=0;i<nums.length;i++) {
-			for(int j=1;j<compNums.length;j++) {
-				if(nums[i]==compNums[i]) {
-					System.out.print("볼");
+			for(int j=0;j<compNums.length;j++) {
+				if(nums[i]==compNums[j]) {
+					if(i==j) {
+						strike ++;
+					}else {
+						ball++;
+					}
+					break;
 				}
 			}
 		}
 		
-		
-		
+		System.out.println(strike+"strike, "+ball+"ball");
 
 	}
 
