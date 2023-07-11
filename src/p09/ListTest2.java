@@ -19,7 +19,7 @@ public class ListTest2 {
 		}
 		for(int i=0;i<numList.size();i++) {
 			String numStr=numList.get(i).toString();
-			numStr=numStr.replace("3", "짝");
+			numStr=numStr.replace("3", "짝"); 
 			numStr=numStr.replace("6", "짝");
 			numStr=numStr.replace("9", "짝");
 			System.out.println(numList.get(i)+": "+numStr);

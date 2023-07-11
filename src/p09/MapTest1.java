@@ -21,7 +21,7 @@ public class MapTest1 {
 		Map<String ,String>m2 = new HashMap<>();
 		m2.put("name", "김아영");
 		m2.put("age", "24");
-		m2.put("address", "부산");
+		m2.put("address", "부산"); 
 		
 		Map<String ,String>m3 = new HashMap<>();
 		m3.put("name", "이왕균");

@@ -15,7 +15,7 @@ public class ListTest4 {
 		String[] strs=numStr.split(",");
 		
 		for(int i=0;i<strs.length;i++) {
-			int num=Integer.parseInt(strs[i]);
+			int num=Integer.parseInt(strs[i]); 
 			numList.add(num);
 		}
 		System.out.println(numList);

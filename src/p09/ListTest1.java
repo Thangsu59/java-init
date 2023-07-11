@@ -19,7 +19,7 @@ public class ListTest1 {
 				i--;
 			}
 		}
-		while(numList.size()<7) {
+		while(numList.size()<7) { 
 			int rNum=random.nextInt(100)+1;
 			if(numList.indexOf(rNum)==-1) {
 				numList.add(rNum);

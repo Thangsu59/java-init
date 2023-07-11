@@ -17,7 +17,7 @@ public class InstanceTest {
 		System.out.println(c.name);
 		
 		Car c1=new Car();
-		c1.name="소나타";
+		c1.name="소나타"; 
 		Car c2=new Car();
 		c2.name="아반떼";
 	}

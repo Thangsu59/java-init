@@ -40,9 +40,9 @@ public class MapTest2 {
 		mapList.add(m4);
 		
 		for(int i=0;i<mapList.size();i++) {
-			Map<String,String> map=mapList.get(i);
+			Map<String,String> map=mapList.get(i); 
 			Iterator<String> it=map.keySet().iterator();
-			while(it.hasNext()) {
+			while(it.hasNext()) { 
 				String key=it.next();
 				System.out.print(key+" : "+map.get(key)+",");
 			}

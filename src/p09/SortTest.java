@@ -17,7 +17,7 @@ public class SortTest {
 		if(n1>n3) {
 			int tmp=n1;
 			n1=n3;
-			n3=tmp;
+			n3=tmp; 
 		}
 		if(n1>n4) {
 			int tmp=n1;
